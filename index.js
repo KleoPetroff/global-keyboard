@@ -12,10 +12,7 @@ function saveData() {
 
 gkm.events.on('key.*', data => {
   const button = data[0];
-  let keysButton = keys[button];
-
-  if (keys[button]) keys[button] += 1;
-  else keys[button] = 1;
+  keys[button] ? keys[button] += 1 : keys[button] = 1;
 
   console.log(keys);
 });

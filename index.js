@@ -12,9 +12,12 @@ function saveData() {
 
 gkm.events.on('key.*', data => {
   const button = data[0];
-  keys[button] ? keys[button] += 1 : keys[button] = 1;
-
-  console.log(keys);
+  
+  if (gkm.events.event === 'key.released') {
+	keys[button] ? keys[button] += 1 : keys[button] = 1;
+	
+	console.log(keys);
+  }
 });
 
 setInterval(saveData, 1000);

@@ -13,4 +13,4 @@ A small script which listens for global keyboard inputs and saves the data in a 
 ## How it works
 
 The script uses `gkm` as global keyboard listener. The package uses [jnativehook](https://github.com/kwhat/jnativehook), a Java library, which provides global keyboard and mouse listeners.
-When started, the script will log and save all keys for the current session in a JSON file, named `data.json`.
+When started, the script will log and save all keys for the current session in a JSON file under the `data` folder with the specific date, month, year and hour.

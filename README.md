@@ -4,7 +4,7 @@ A small script which listens for global keyboard inputs and saves the data in a 
 
 ## How to install
 
-**Requirements:** Make sure you have Node.js v7.4.0 or v8.0.0 installed, JVM and java available on your PATH.
+**Requirements:** Make sure you have Node.js v7.4.0+ installed, JVM and java available on your PATH.
 
 1. Clone the repo - `git clone https://github.com/KleoPetroff/global-keyboard.git`
 2. Install the dependencies by running `npm install`

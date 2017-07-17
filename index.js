@@ -1,10 +1,13 @@
 const gkm = require('gkm');
 const fs = require('fs');
 
+const date = require('./lib/date');
+const filepath = `./data/data-${date.day}.${date.month}.${date.year}-${date.hour}.${date.minutes}.json`;
+
 const keys = {};
 
 function saveData() {
-  fs.writeFile('data.json', JSON.stringify(keys), err => {
+  fs.writeFile(filepath, JSON.stringify(keys), err => {
     if (err) console.log(err);
     else return;
   })

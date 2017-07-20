@@ -17,10 +17,9 @@ gkm.events.on('key.*', data => {
   const button = data[0];
   
   if (gkm.events.event === 'key.released') {
-	keys[button] ? keys[button] += 1 : keys[button] = 1;
-	
-	console.log(keys);
+    keys[button] ? keys[button] += 1 : keys[button] = 1;
+
+    saveData();
+    console.log(keys);
   }
 });
-
-setInterval(saveData, 1000);
